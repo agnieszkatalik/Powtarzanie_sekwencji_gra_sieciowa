@@ -1,4 +1,5 @@
-# Powtarzanie_sekwencji_gra_sieciowa
-Gra sieciowa z czatem polegająca na powtarzaniu przez użytkowników wyświetlanych losowo sekwencji.
-Gracze widzą nawzajem swoje wyniki.
-Łączenie za pomocą IP.# Powtarzanie_sekwencji_gra_sieciowa
+Do stworzenia architektury klient-serwer konieczne było dodanie biblioteki INDY. Czat został stworzony pomocy protokołu TCP, pozwalającego komunikowad się między komputerami, po wprowadzeniu prawidłowego IP. Serwer nawiązuje połączenia na stałym porcie 12000. Port da się zmienid jedynie w kodzie, nie ma możliwości jego zmiany przez użytkownika gry. Gracz ma możliwośd jedynie wprowadzenia IP drugiego komputera, na który następnie może wysyład wiadomości, gdy tamten ma uruchomioną aplikację.
+
+W grze poza zaprojektowaniem podstawowych zasad dodane zostało kilka funkcji, pozwalających wyeliminowad błędy lub usprawniających pracę programu, m.in. różne rodzaje kursorów, zablokowanie możliwości klikania podczas losowania, ustalona długośd trwania zapalonej bombki, przerwa przed zapalaniem kolejnych, itp. Dodane zostały również kluczowe komunikaty dla gracza oraz aktualny wynik rozgrywki.
+
+Brak nawiązania połączenia z innym komputerem nie ma wpływu na grę, natomiast przebieg gry nie ma wpływu na komunikowanie się za pośrednictwem czatu. Oznacza to, m.in. fakt, że można grad bez korzystania z czatu oraz czatowad bez konieczności grania.
